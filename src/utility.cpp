@@ -75,7 +75,7 @@ data_chunk new_seed(size_t bit_length)
 {
     size_t fill_seed_size = bit_length / byte_bits;
     data_chunk seed(fill_seed_size);
-    pseudo_random_fill(seed);
+    secure_random_fill(seed);
     return seed;
 }
 

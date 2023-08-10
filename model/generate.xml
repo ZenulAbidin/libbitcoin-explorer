@@ -477,7 +477,7 @@
     <argument name="SCRIPT" stdin="true" type="script" description="The script to use in the address. Multiple tokens must be quoted. If not specified the script is read from STDIN."/>
   </command>
   
-  <command symbol="seed" output="base16" category="WALLET" description="Generate a pseudorandom seed.">
+  <command symbol="seed" output="base16" category="WALLET" description="Generate a secure random seed from a CSRNG.">
     <option name="bit_length" type="uint16_t" default="192" description="The length of the seed in bits. Must be divisible by 8 and must not be less than 128, defaults to 192." />
     <define name="BX_SEED_BIT_LENGTH_UNSUPPORTED" value="The seed size is not supported." />
   </command>

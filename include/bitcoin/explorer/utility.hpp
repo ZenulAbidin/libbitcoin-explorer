@@ -186,7 +186,7 @@ BCX_API client::connection_type get_connection(const command& command);
 BCX_API ec_secret new_key(const data_chunk& seed);
 
 /**
- * Generate a new pseudorandom seed.
+ * Generate a new secure random seed from a CSRNG.
  * @param[in]  seed  The seed length in bits. Will be aligned to nearest byte.
  * @return           The new key.
  */
